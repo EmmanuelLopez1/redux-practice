@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/reposi.../static/css/main.073c9b0a.css",
+    "main.js": "/reposi.../static/js/main.a65bae21.js",
+    "static/js/787.9d4da4fb.chunk.js": "/reposi.../static/js/787.9d4da4fb.chunk.js",
+    "static/media/logo.svg": "/reposi.../static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/reposi.../index.html",
+    "main.073c9b0a.css.map": "/reposi.../static/css/main.073c9b0a.css.map",
+    "main.a65bae21.js.map": "/reposi.../static/js/main.a65bae21.js.map",
+    "787.9d4da4fb.chunk.js.map": "/reposi.../static/js/787.9d4da4fb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.a65bae21.js"
+  ]
+}
