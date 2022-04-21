@@ -1,5 +1,5 @@
 {
-  "homepage":"https://yourusername.github.io/reposi..." ,
+  "homepage": "https://EmmanuelLopez1.github.io/redux-practice",
   "name": "redux-practice",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +9,10 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-redux": "^8.0.1",
     "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -39,6 +42,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "autoprefixer": "^10.4.4",
+    "gh-pages": "^3.2.3",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.24"
   }
 }

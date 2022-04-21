@@ -1,0 +1,8 @@
+// POKEMONS
+export const GET_POKEMONS = "GET_POKEMONS"
+
+
+// PROFILE
+export const ADD_TO_FAVORITE = "ADD_TO_FAVORITE"
+
+
