@@ -7,11 +7,7 @@ import { get_pokemons } from './redux/actions/pokemonActions';
 import { add_to_favorite } from './redux/actions/profileAction';
 
 // COMPONENTS
-import RoutesComponent from './routes/Routes';
-
-const unsubscribe = store.subscribe(()=>{
-  console.log(store.getState());
-})
+import RoutesComponent from './routes/Routes';  
 store.dispatch(get_pokemons())
 
 

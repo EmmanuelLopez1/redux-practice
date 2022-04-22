@@ -7,6 +7,7 @@ export const PREV_PAGE = "PREV_PAGE"
 
 // PROFILE
 export const ADD_TO_FAVORITE = "ADD_TO_FAVORITE"
+export const REMOVE_TO_FAVORITE = "REMOVE_TO_FAVORITE"
 export const SET_USER_INFO = "SET_USER_INFO"
 
 

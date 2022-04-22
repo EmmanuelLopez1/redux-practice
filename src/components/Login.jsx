@@ -18,7 +18,6 @@ const Login = () => {
     }
 
 
-
     // dispatch({type:"SET_USER_INFO"})
     return (
         <div className='Login border border-black m-auto mt-10 rounded p-5 w-10/12 flex flex-col'>

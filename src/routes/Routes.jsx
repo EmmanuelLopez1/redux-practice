@@ -8,6 +8,7 @@ import Login from '../components/Login';
 
 //   COMPONENTS
 import Layout from '../containers/Layout';
+import Favorites from '../pages/Favorites';
 import Home from '../pages/Home';
 import LoginPage from '../pages/LoginPage';
 
@@ -18,9 +19,14 @@ const RoutesComponent = () => {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Layout>
-                        <Home/>
-                    </Layout>}></Route>
-                    <Route path='/Login' element={<Layout>
+                            <Home/>
+                        </Layout>}>
+                    </Route>
+                    <Route path="/favorites" element={<Layout>
+                            <Favorites/>
+                        </Layout>}>
+                    </Route>
+                    <Route path='/login' element={<Layout>
                         <LoginPage>
                             <Login/>
                         </LoginPage>

@@ -10,10 +10,15 @@ const Header = () => {
                 <Link to="/">
                     <p className='p-2 rounded text-white text-lg hover:bg-black hover:text-white'>Home</p>
                 </Link>
+                <Link to="/favorites">
+                    <p className='p-2 rounded text-white text-lg hover:bg-black hover:text-white'>
+                        Favorites
+                    </p>
+                </Link>
                 {
                     !profile.logged &&
 
-                    <Link to="/Login">
+                    <Link to="/login">
                         <p className='p-2 rounded text-white text-lg hover:bg-black hover:text-white'>Login</p>
                     </Link>
                 }
