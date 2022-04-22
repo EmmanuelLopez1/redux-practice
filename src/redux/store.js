@@ -2,10 +2,10 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import {createStore, applyMiddleware} from "redux"
 
 import rootReducer from "./reducer";
-import { fetch_pokemons } from "./features/pokemon";
+import { fetch_pokemons, change_pokemon_page } from "./features/pokemon";
 
 const composedEnhancer = composeWithDevTools(
-    applyMiddleware(fetch_pokemons)
+    applyMiddleware(fetch_pokemons, change_pokemon_page)
 )
 
 
