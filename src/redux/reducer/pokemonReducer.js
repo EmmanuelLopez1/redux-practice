@@ -8,7 +8,7 @@ const initialState = {
             pokemon: "pokemon/"
         },
         limit: 20,
-        offset: 20,
+        offset: 0,
         data: []
     }
 }
@@ -35,12 +35,17 @@ const pokemonReducer = (state = initialState, action) => {
                 }
             }
         case PREV_PAGE:
-            return {
-                ...state,
-                pokemons: {
-                    ...state.pokemons,
-                    offset: state.pokemons.offset - action.payload
+            if(state.pokemons.offset>=20){
+                return {
+                    ...state,
+                    pokemons: {
+                        ...state.pokemons,
+                        offset: state.pokemons.offset - action.payload.offset,
+                        data:action.payload.data
+                    }
                 }
+            }else{
+                return state
             }
 
         default:

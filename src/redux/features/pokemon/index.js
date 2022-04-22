@@ -25,7 +25,12 @@ export const change_pokemon_page = (storeAPI)=> (next)=> async(action)=>{
     if(action.type === "NEXT_PAGE" || action.type === "PREV_PAGE"){
         try {
             console.log("fetching");
-            let res = await fetch(`${state.base_url}${state.endpoints.pokemon}?limit=${state.limit}&offset=${action.payload}`)
+            let res;
+            if(action.type === "NEXT_PAGE"){
+                res = await fetch(`${state.base_url}${state.endpoints.pokemon}?limit=${state.limit}&offset=${state.offset + action.payload}`)
+            }else{
+                res = await fetch(`${state.base_url}${state.endpoints.pokemon}?limit=${state.limit}&offset=${state.offset - action.payload}`)
+            }
             let pokemons = await res.json()
             pokemons = await pokemons.results
 
